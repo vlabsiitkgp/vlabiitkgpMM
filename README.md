@@ -1,4 +1,4 @@
-# vlabiitkgpAM
+# vlabiitkgpMM
 ## Virtual Labs IIT Kharagpur practice template for Vlabs related to Manufacturing Methods
 ## Empty template of Virtual labs IIT Khargpur webpage.
 
