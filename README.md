@@ -1,6 +1,6 @@
 # vlabiitkgpMM
 ## Virtual Labs IIT Kharagpur practice template for Vlabs related to Manufacturing Methods
-## Empty template of Virtual labs IIT Khargpur webpage.
+## Empty template of Virtual labs IIT Kharagpur webpage.
 
 ## Read the instructions in [Readme.pdf](https://github.com/vlabsiitkgp/vlabiitkgpECE/blob/master/Readme.pdf) document to use Atom to upload to GitHub.
 
