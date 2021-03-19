@@ -1,11 +1,7 @@
-/*
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+
 (function ($) {
 	$('.error_html').show();
-	var copyRightHTML = '<div class="copyright">&copy; Tatikonda Sree Lakshmi, Research Engineer, VLabs IITKGP.</div>';
+	var copyRightHTML = '<div class=""</div>';
 	$("#footer").append(copyRightHTML);
 
 	$(document).on("click", "#submit_values", function () {
@@ -13,8 +9,8 @@
 		var lss = $('#laser_scan_speed').val();
 		var sod = $('#sod').val();
 		var gp = $('#gas_pressure').val();
-		
-		
+
+
 		if(lss == '5000' && sod == '1.75' && gp == '3') {
 			if(lp == '800') {
 				$('.kwt').html('280');
@@ -96,7 +92,7 @@
         $('.error_html').show();
         $('.error_html').delay(2000).fadeOut('slow');
 	}
-	
+
 	var $window = $(window),
 		$banner = $('#banner'),
 		$body = $('body');

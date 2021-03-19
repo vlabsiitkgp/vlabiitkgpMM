@@ -1,18 +1,14 @@
-/*
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+
 (function ($) {
 
 	var copyRightHTML = '<div class="copyright">&copy; Tatikonda Sree Lakshmi, Research Engineer, VLabs IITKGP.</div>';
 	$("#footer").append(copyRightHTML);
-	
+
 	$(document).on("click", "#submit_values", function () {
 		$('.air-pump').prop("disabled", false);
 		$('#submit_values').prop("disabled", true);
 	});
-	
+
 	$(document).on("click", ".air-pump", function () {
 		$('.abrasive-inlet').prop("disabled", false);
 		$('.air-pump').prop("disabled", true);
@@ -23,7 +19,7 @@
 					.end()
 					.appendTo('#slideshow') ;
 	});
-	
+
 	$(document).on("click", ".abrasive-inlet", function () {
 		$('.start-machining').prop("disabled", false);
 		$('.abrasive-inlet').prop("disabled", true);
@@ -37,21 +33,21 @@
 
 	$(document).on("click", ".start-machining", function () {
 		$('.start-machining').prop("disabled", true);
-		
-		
+
+
 		var a_value = parseInt($('#a_value').val());
 		var v_value = parseInt($('#v_value').val());
 		var type = $('#Workpiece').val();
 		var mrr = 0;
 		var H = (Math.random() + 3).toFixed(2);
-		
+
 		if(type == "brittle"){
 			mrr = ((a_value * Math.pow(v_value,3/2))/ (3^1/4*H^3/4)) * 0.00316;
 		}
 		else{
 			mrr = ((a_value * Math.pow(v_value,2))/H) * (Math.pow(10,-4)/120);
 		}
-		
+
 		var timesRun = 0;
 		var interval =	setInterval(function () {
 				$('#slideshow > div:first')
@@ -69,7 +65,7 @@
 					//$(".ewr_value b").html("(Eb - Ea)/T gm/min");
 				}
 			}, 600);
-	
+
 	});
 
 	function getRandomArbitrary(min, max) {
@@ -135,8 +131,8 @@
 		  .text(controlVal);
 
 	});
-	
-	
+
+
 
 
 })(jQuery);
