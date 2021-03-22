@@ -42,10 +42,10 @@
 		var H = (Math.random() + 3).toFixed(2);
 
 		if(type == "brittle"){
-			mrr = ((a_value * Math.pow(v_value,3/2))/ (3^1/4*H^3/4)) * 0.0316;
+			mrr = ((a_value * Math.pow(v_value,3/2))/ (3^1/4*H^3/4)) * 0.00316;
 		}
 		else{
-			mrr = ((a_value * Math.pow(v_value,2))/H) * (Math.pow(10,-3)/120);
+			mrr = ((a_value * Math.pow(v_value,2))/H) * (Math.pow(10,-2)/120);
 		}
 
 		var timesRun = 0;
