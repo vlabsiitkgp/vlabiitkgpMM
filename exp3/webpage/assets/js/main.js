@@ -45,7 +45,11 @@
 			mrr = ((a_value * Math.pow(v_value,3/2))/ (3^1/4*H^3/4)) * 0.000316;
 		}
 		else{
-			mrr = ((a_value * Math.pow(v_value,2))/H) * (Math.pow(10,-1)/120);
+			mrr = ((a_value * Math.pow(v_value,2))/H) * (Math.pow(10,-2)/120);
+		}
+		if(v_value > 100) {
+			mrr *= 0.65;
+
 		}
 
 		var timesRun = 0;
