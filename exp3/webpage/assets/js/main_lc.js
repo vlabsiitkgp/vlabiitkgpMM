@@ -1,7 +1,7 @@
 
 (function ($) {
 	$('.error_html').show();
-	var copyRightHTML = '<div class=""</div>';
+	var copyRightHTML = '<div class="copyright">&copy; Tatikonda Sree Lakshmi, Research Engineer, VLabs IITKGP.</div>';
 	$("#footer").append(copyRightHTML);
 
 	$(document).on("click", "#submit_values", function () {
