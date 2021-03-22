@@ -42,10 +42,10 @@
 		var H = (Math.random() + 3).toFixed(2);
 
 		if(type == "brittle"){
-			mrr = ((a_value * Math.pow(v_value,3/2))/ (3^1/4*H^3/4)) * 0.00316;
+			mrr = ((a_value * Math.pow(v_value,3/2))/ (3^1/4*H^3/4)) * 0.0316;
 		}
 		else{
-			mrr = ((a_value * Math.pow(v_value,2))/H) * (Math.pow(10,-4)/120);
+			mrr = ((a_value * Math.pow(v_value,2))/H) * (Math.pow(10,-3)/120);
 		}
 
 		var timesRun = 0;
@@ -59,7 +59,7 @@
 				timesRun += 1;
 				if(timesRun === 22){
 					clearInterval(interval);
-					$('.mt_value').html(mrr.toFixed(2) + " gm/min");
+					$('.mt_value').html(mrr.toFixed(2) + " mm3/min");
 					$('#submit_values').prop("disabled", false);
 					//$(".mrr_value b").html("(Wb - Wa)/T gm/min");
 					//$(".ewr_value b").html("(Eb - Ea)/T gm/min");
