@@ -9,7 +9,7 @@ var count = 0;
 	$("#footer").append(copyRightHTML);
 
 	$(document).on("click", "#exp_start", function () {
-		startMachine =  setInterval(function(){if(count == 0){$('.rotating_image').attr("src", "Images/Main1.jpg");count=1}else{$('.rotating_image').attr("src", "images/Main.jpg");count=0}}, 100);
+		startMachine =  setInterval(function(){if(count == 0){$('.rotating_image').attr("src", "Images/Main1.JPG");count=1}else{$('.rotating_image').attr("src", "images/Main.JPG");count=0}}, 100);
 	});
 
 	$(document).on("click", "#exp_stop", function () {
