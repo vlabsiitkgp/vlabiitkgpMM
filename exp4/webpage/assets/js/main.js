@@ -9,7 +9,7 @@ var count = 0;
 	$("#footer").append(copyRightHTML);
 
 	$(document).on("click", "#exp_start", function () {
-		startMachine =  setInterval(function(){if(count == 0){$('.rotating_image').attr("src", "Images/Main1.JPG");count=1}else{$('.rotating_image').attr("src", "images/Main.JPG");count=0}}, 100);
+		startMachine =  setInterval(function(){if(count == 0){$('.rotating_image').attr("src", "Images/Main1.jpg");count=1}else{$('.rotating_image').attr("src", "images/Main.jpg");count=0}}, 100);
 	});
 
 	$(document).on("click", "#exp_stop", function () {
@@ -25,39 +25,39 @@ var count = 0;
 
 		if(ballsCount == "7" && contactAngle=="0" && pitchDia =="40" && ballDia=="4" && rpm=="1000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/1.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/1.jpg");
 		}
 		else if(ballsCount == "8" && contactAngle=="1" && pitchDia =="50" && ballDia=="5" && rpm=="3000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/2.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/2.jpg");
 		}
 		else if(ballsCount == "9" && contactAngle=="2" && pitchDia =="55" && ballDia=="6" && rpm=="4000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/3.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/3.jpg");
 		}
 		else if(ballsCount == "10" && contactAngle=="3" && pitchDia =="60" && ballDia=="7" && rpm=="5000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/4.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/4.jpg");
 		}
 		else if(ballsCount == "11" && contactAngle=="4" && pitchDia =="70" && ballDia=="8" && rpm=="6000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/5.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/5.jpg");
 		}
 		else if(ballsCount == "12" && contactAngle=="5" && pitchDia =="75" && ballDia=="9" && rpm=="7000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/6.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/6.jpg");
 		}
 		else if(ballsCount == "13" && contactAngle=="6" && pitchDia =="80" && ballDia=="10" && rpm=="8000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/7.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/7.jpg");
 		}
 		else if(ballsCount == "14" && contactAngle=="7" && pitchDia =="90" && ballDia=="11" && rpm=="9000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/8.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/8.jpg");
 		}
 		else if(ballsCount == "15" && contactAngle=="10" && pitchDia =="100" && ballDia=="4" && rpm=="10000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/9.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/9.jpg");
 		}
 		else{
 			alert("invalid inputs");
@@ -73,39 +73,39 @@ var count = 0;
 
 		if(ballsCount == "7" && contactAngle=="0" && pitchDia =="40" && ballDia=="4" && rpm=="1000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/1_detailed.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/1_detailed.jpg");
 		}
 		else if(ballsCount == "8" && contactAngle=="1" && pitchDia =="50" && ballDia=="5" && rpm=="3000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/2_detailed.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/2_detailed.jpg");
 		}
 		else if(ballsCount == "9" && contactAngle=="2" && pitchDia =="55" && ballDia=="6" && rpm=="4000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/3_detailed.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/3_detailed.jpg");
 		}
 		else if(ballsCount == "10" && contactAngle=="3" && pitchDia =="60" && ballDia=="7" && rpm=="5000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/4_detailed.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/4_detailed.jpg");
 		}
 		else if(ballsCount == "11" && contactAngle=="4" && pitchDia =="70" && ballDia=="8" && rpm=="6000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/5_detailed.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/5_detailed.jpg");
 		}
 		else if(ballsCount == "12" && contactAngle=="5" && pitchDia =="75" && ballDia=="9" && rpm=="7000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/6_detailed.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/6_detailed.jpg");
 		}
 		else if(ballsCount == "13" && contactAngle=="6" && pitchDia =="80" && ballDia=="10" && rpm=="8000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/7_detailed.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/7_detailed.jpg");
 		}
 		else if(ballsCount == "14" && contactAngle=="7" && pitchDia =="90" && ballDia=="11" && rpm=="9000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/8_detailed.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/8_detailed.jpg");
 		}
 		else if(ballsCount == "15" && contactAngle=="10" && pitchDia =="100" && ballDia=="4" && rpm=="10000") {
 			$('#spectrum_modal').modal('show');
-			$('#spectrum_modal .spectrum_image').attr("src", "images/9_detailed.jpg");
+			$('#spectrum_modal .spectrum_image').attr("src", "Images/9_detailed.jpg");
 		}
 		else{
 			alert("invalid inputs");
