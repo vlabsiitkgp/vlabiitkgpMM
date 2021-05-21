@@ -90,48 +90,54 @@
                                   <div class="content" id="experiment-article-section-2-content">
                                       <p style="text-align: justify; padding-bottom: 20px"> </p>
 
-                                <p>1. The mechanism of material removal in EDM process is</p>
+                                <p>1.What is the basic principle of a focused laser beam?</p>
                                 <div class="Q">
                                   <div class="Q1">
-                                      <input type="radio" name="q1" value ="A">Melting and Evaporation
-                                      <input type="radio" name="q1" value ="B">Melting and Corrosion
-                                      <input type="radio" name="q1" value ="C">Erosion and Cavitation
-                                      <input type="radio" name="q1" value ="D">Cavitation and Evaporation
+                                      <input type="radio" name="q1" value ="A">Melting
+                                      <input type="radio" name="q1" value ="B">Evaporation
+                                      <input type="radio" name="q1" value ="C">Welding
+                                      <input type="radio" name="q1" value ="D">None of the above
                                   </div>
                                   <p class= "Q1-result hide"></p>
                                   <br>
 
-                                  <p>2. In EDM, if the thermal conductivity of tool is high and the specific heat of work piece is low, then the tool wear rate and material removal rate are expected to be respectively </p>
+                                  <p>2. LASER stands for? </p>
                                   <div class="Q2">
-                                      <input type="radio" name="q2" value ="A">high and high
-                                      <input type="radio" name="q2" value ="B">low and low
-                                      <input type="radio" name="q2" value ="C">high and low
-                                      <input type="radio" name="q2" value ="D">low and high
+                                      <input type="radio" name="q2" value ="A">Light Absorption by Stimulated Emission of Radiation
+                                      <input type="radio" name="q2" value ="B">Light Alteration by Stimulated Emission of Radiation
+                                      <input type="radio" name="q2" value ="C">Light Amplification by Stimulated Emission of Radiation
+
                                   </div>
-                                  <p class= "Q2-result hide"></p>
+
                                   <br>
-                                  <p>3. <span style="word-wrap: break-word;">In an EDM process using RC relaxation circuit, a 12mm diameter through hole is made in a steel plate of 50mm thickness using a graphite tool and kerosene as dielectric assume discharge time to be negligible. Machining is carried out under the following conditions</span></p>
-                      <p style="margin-left:5px;">Resistance = 40 &#8486;</p>
-                      <p style="margin-left:5px;">Capacitance = 20 μF</p>
-                      <p style="margin-left:5px;">Supply voltage = 220V </p>
-                      <p style="margin-left:5px;">Discharge voltage = 110V</p>
-                      <p>(i) The time for one cycle, in milliseconds, is </p>
-                                  <div class="Q3">
-                                      <input type="radio" name="q3" value ="A">0.55
-                                      <input type="radio" name="q3" value ="B">0.32
-                                      <input type="radio" name="q3" value ="C">0.89
-                                      <input type="radio" name="q3" value ="D">0.24
-                                  </div>
-                                  <p class= "Q3-result hide"></p>
-                      <p>(ii) Average power input (in KW) is </p>
-                                  <div class="Q4">
-                                      <input type="radio" name="q4" value ="A">0.373
-                                      <input type="radio" name="q4" value ="B">0.218
-                                      <input type="radio" name="q4" value ="C">0.137
-                                      <input type="radio" name="q4" value ="D">0.5
-                                  </div>
-                                  <p class= "Q4-result hide"></p>
+
+                                  <p>3.Maximum thickness of stainless steel bar that can be cut using fiber laser machine?</p>
+                                    <div class="Q3">
+                                        <input type="radio" name="q3" value ="A">10mm
+                                        <input type="radio" name="q3" value ="B">12mm
+                                        <input type="radio" name="q3" value ="C">15mm
+                                        <input type="radio" name="q3" value ="D">20mm
+                                    </div>
+                                    <p class= "Q3-result hide"></p>
                                   <br>
+                                  <p>4. What determines the colour of light?</p>
+                                              <div class="Q4">
+                                                  <input type="radio" name="q4" value ="A">Wavelength
+                                                  <input type="radio" name="q4" value ="B">Intensity
+                                                  <input type="radio" name="q4" value ="C">Source
+                                                  <input type="radio" name="q4" value ="D">Cannot be determined
+                                              </div>
+                                              <p class= "Q4-result hide"></p>
+                                              <br>
+                                              <p>5. As wavelength gets longer, the laser light can be focused to ?</p>
+                                                          <div class="Q5">
+                                                              <input type="radio" name="q5" value ="A">Larger spots
+                                                              <input type="radio" name="q5" value ="B">Smaller spots
+                                                              <input type="radio" name="q5" value ="C">Both
+                                                              <input type="radio" name="q5" value ="D">None
+                                                          </div>
+                                                          <p class= "Q5-result hide"></p>
+                                                          <br>
                                   <button type="button" class="btn btn-success quizSubmit">Submit</button>
                       </div>
 
@@ -382,3 +388,15 @@
         </div>
     </body>
 </html>
+
+<script>
+
+$(document).on("click", "#experiment-article-section-2 .quizSubmit", function () {
+  let ans = ['A','C','C','A','B' ];
+
+  for(let i=1;i<=ans.length;i++){
+    if($('#experiment-article-section-2 input[name="q'+i+'"]:checked').val() == ans[i-1]) $('#experiment-article-section-2 .Q'+i+'-result').css('display','block').css('color','green').html('Correct answer');
+    else $('#experiment-article-section-2 .Q'+i+'-result').toggle().css('display','block').css('color','red').html('Wrong! correct answer is '+ans[i-1]);
+  }
+});
+</script>
